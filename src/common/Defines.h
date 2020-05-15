@@ -192,6 +192,10 @@ DECLARE_int64(saug_tmaskt);
 DECLARE_double(saug_tmaskp);
 DECLARE_int64(saug_tmaskn);
 
+/* ========== FEATURE DATA OPTIONS ========== */
+DECLARE_bool(wav2vec);
+DECLARE_int64(wav2vecfeat);
+
 /* ========== RUN OPTIONS ========== */
 
 DECLARE_string(datadir);

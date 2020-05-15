@@ -139,6 +139,10 @@ DEFINE_double(
     "Max proportion of the input sequence (1.0 is 100%) that can be masked in time");
 DEFINE_int64(saug_tmaskn, 2, "Number of time masks");
 
+// WAV2VEC OPTIONS
+DEFINE_bool(wav2vec, false, "use wav2vec embeddings from hdf5 files");
+DEFINE_int64(wav2vecfeat, 512, "number of wav2vec features");
+
 // RUN OPTIONS
 DEFINE_string(datadir, "", "speech data directory");
 DEFINE_string(tokensdir, "", "dictionary directory");

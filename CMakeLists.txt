@@ -188,6 +188,8 @@ target_link_libraries(
   data
   module
   runtime
+  hdf5_cpp
+  hdf5_serial
   )
 
 target_include_directories(
@@ -195,6 +197,7 @@ target_include_directories(
   PUBLIC
   ${PROJECT_SOURCE_DIR}/src # all includes are based at src/
   ${FLASHLIGHT_INCLUDE_DIRS} # includes are <flashlight/...>
+  /usr/include/hdf5/serial  # includes for hdf5 library
   )
 
 # Build experimental assets if specified
